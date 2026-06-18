@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Weather Forecast App</title>
+
+<link rel="stylesheet" href="weather.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌤 Weather Forecast</h1>
+
+    <p class="subtitle">
+        Get real-time weather updates 🌎
+    </p>
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="city"
+        placeholder="Enter city name">
+
+        <button onclick="getWeather()">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- Weather Result -->
+
+    <div class="weather-box">
+
+        <div class="icon">
+
+            🌤️
+
+        </div>
+
+        <h2 id="cityName">
+
+            Search a City
+
+        </h2>
+
+        <h1 id="temp">
+
+            --
+
+        </h1>
+
+        <p id="condition">
+
+            Enter a city name above
+
+        </p>
+
+
+        <div class="details">
+
+            <div class="card">
+
+                💧
+
+                <p>Humidity</p>
+
+                <span id="humidity">
+
+                    --
+
+                </span>
+
+            </div>
+
+
+
+            <div class="card">
+
+                🌬️
+
+                <p>Wind</p>
+
+                <span id="wind">
+
+                    --
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <p class="footer">
+
+        ✨ Have a Nice Day ✨
+
+    </p>
+
+</div>
+
+<script src="weather.js"></script>
+
+</body>
+
+</html>
